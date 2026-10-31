@@ -1,162 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>K24 Digital Studio — Ідеї, що працюють</title>
-<meta name="description" content="K24 Digital Studio — незалежна студія: Telegram-боти, вебсайти та WebApp, AI й автоматизація, ігрові системи, API та інтеграції.">
-<meta name="theme-color" content="#0B0B0B">
-<meta property="og:title" content="K24 Digital Studio — Ідеї, що працюють">
-<meta property="og:description" content="Telegram-боти, вебсайти, AI та ігрові системи під ваше завдання.">
-<meta property="og:type" content="website">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="K24 Digital Studio — розробка Telegram-ботів, сайтів, WebApp, AI-автоматизації та ігрових систем. Ідеї, що працюють.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="K24 Digital Studio — Ідеї, що працюють">
+  <meta property="og:description" content="Створюємо цифрові продукти, які вирішують реальні задачі: від Telegram-ботів до вебсервісів та ігрових систем.">
+  <meta property="og:url" content="https://vladosik24.github.io/K24/">
+  <title>K24 Digital Studio — Ідеї, що працюють</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<header class="site-header" id="top">
-  <a class="brand" href="#home" aria-label="K24 Digital Studio — на головну">
-    <img src="assets/logo.svg" alt="K24 Digital Studio" width="150" height="48">
-  </a>
-  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Відкрити меню"><span></span><span></span></button>
-  <nav class="nav" id="nav" aria-label="Головна навігація">
-    <a href="#services">Послуги</a>
-    <a href="#portfolio">Портфоліо</a>
-    <a href="#about">Про студію</a>
-    <a href="#process">Етапи</a>
-    <a href="#contacts">Контакти</a>
-    <a class="nav-cta" href="https://t.me/K24VL" target="_blank" rel="noopener">Написати в Telegram</a>
-  </nav>
-</header>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="header" id="top">
+    <a class="brand" href="#home" aria-label="K24 — на головну"><span class="brand-mark">K<span>24</span></span><span class="brand-caption">DIGITAL STUDIO</span></a>
+    <button class="menu-toggle" aria-label="Відкрити меню" aria-expanded="false" aria-controls="site-nav"><i></i><i></i></button>
+    <nav class="nav" id="site-nav" aria-label="Головна навігація">
+      <a href="#services">Послуги</a><a href="#work">Проєкти</a><a href="#studio">Студія</a><a href="#process">Процес</a>
+      <a class="nav-contact" href="https://t.me/K24VL" target="_blank" rel="noopener noreferrer">Обговорити проєкт <span>↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-grid"></div><div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="status-dot"></span> INDEPENDENT DIGITAL STUDIO <span class="eyebrow-line"></span> EST. K24</div>
+        <h1>Перетворюємо<br><em>ідеї</em> на цифрову<br>реальність<span class="gold-dot">.</span></h1>
+        <p class="hero-copy">Створюємо цифрові продукти, які не просто мають гарний вигляд — вони працюють, розвиваються та вирішують реальні задачі.</p>
+        <div class="hero-actions"><a class="button button-gold" href="https://t.me/K24VL" target="_blank" rel="noopener noreferrer">Обговорити проєкт <span>↗</span></a><a class="button button-ghost" href="#work">Дивитися роботи <span>↓</span></a></div>
+        <div class="hero-foot"><span>БІЗНЕС · ТЕХНОЛОГІЇ · ІГРИ</span><span>UKRAINE <b>●</b> WORLDWIDE</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="art-ring ring-a"></div><div class="art-ring ring-b"></div><div class="art-core"><span>K</span><b>24</b><small>DIGITAL</small></div><div class="orbit-label label-top">IDEA → PRODUCT</div><div class="orbit-label label-bottom">DESIGN / BUILD / LAUNCH</div><div class="art-cross cross-a">+</div><div class="art-cross cross-b">✳</div></div>
+      <a class="scroll-cue" href="#services"><span></span> SCROLL TO EXPLORE</a>
+    </section>
 
-<main>
-<section class="hero" id="home">
-  <svg class="hero-ring" viewBox="0 0 400 400" aria-hidden="true">
-    <circle cx="200" cy="200" r="190" pathLength="100"/>
-    <circle cx="200" cy="200" r="150" pathLength="100"/>
-    <circle cx="200" cy="200" r="110" pathLength="100"/>
-  </svg>
-  <div class="hero-inner">
-    <p class="hero-kicker">K24 Digital Studio</p>
-    <h1>Ідеї, що працюють</h1>
-    <p class="hero-lead">Незалежна студія, яка перетворює ідеї на функціональні цифрові продукти: від Telegram-ботів і сайтів до ігрових систем та автоматизації.</p>
-    <div class="hero-actions">
-      <a class="btn btn-gold" href="https://t.me/K24VL" target="_blank" rel="noopener">Обговорити проєкт</a>
-      <a class="btn btn-line" href="#portfolio">Переглянути роботи</a>
-    </div>
-  </div>
-</section>
+    <section class="intro section-shell reveal" id="services"><div class="section-top"><span class="section-index">01 / WHAT WE DO</span><span class="section-note">ВІД ІДЕЇ ДО ЗАПУСКУ</span></div><div class="intro-heading"><h2>Технології з<br><em>характером.</em></h2><p>Поєднуємо інженерне мислення, функціональний дизайн і сучасні технології, щоб створювати рішення з чіткою метою.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-number">01</div><div class="service-icon">⌘</div><h3>Telegram<br>розробка</h3><p>Боти, Mini Apps, ігрові механіки, платежі через Stars, профілі та адміністративні панелі.</p><span class="service-arrow">↗</span></article>
+        <article class="service-card"><div class="service-number">02</div><div class="service-icon">▱</div><h3>Web &<br>інтерфейси</h3><p>Сайти, лендінги та WebApp з адаптивним дизайном, продуманою структурою й швидким завантаженням.</p><span class="service-arrow">↗</span></article>
+        <article class="service-card"><div class="service-number">03</div><div class="service-icon">✳</div><h3>AI &<br>автоматизація</h3><p>Інтеграції з API, AI-інструменти та автоматизація повторюваних процесів.</p><span class="service-arrow">↗</span></article>
+        <article class="service-card"><div class="service-number">04</div><div class="service-icon">◈</div><h3>Game<br>systems</h3><p>Ігрова економіка, прогресія, рівні, інвентар, магазини, рейтинги та внутрішні системи.</p><span class="service-arrow">↗</span></article>
+      </div>
+    </section>
 
-<section class="section" id="services">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <h2>Послуги</h2>
-      <p>Чотири напрями, у яких студія працює щодня. Кожен проєкт робимо під конкретне завдання.</p>
-    </div>
-    <div class="grid grid-2">
-      <article class="card reveal">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l5 2 2 6 3-4 5 4z"/></svg>
-        <h3>Telegram-боти</h3>
-        <p>Меню, профілі, валюти, Premium, Telegram Stars, реферали та адмін-панелі.</p>
-      </article>
-      <article class="card reveal">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
-        <h3>Веброзробка</h3>
-        <p>Сайти, лендінги, WebApp та адаптивні інтерфейси для будь-яких пристроїв.</p>
-      </article>
-      <article class="card reveal">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/></svg>
-        <h3>AI та автоматизація</h3>
-        <p>AI-інструменти, API та автоматизація процесів, що економлять час.</p>
-      </article>
-      <article class="card reveal">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 11h12a4 4 0 0 1 4 4v1a2 2 0 0 1-3.5 1.3L16 15H8l-2.5 2.3A2 2 0 0 1 2 16v-1a4 4 0 0 1 4-4zM8 8v3M6.5 9.5h3"/></svg>
-        <h3>Ігрові системи</h3>
-        <p>Економіка, рівні, XP, магазини, інвентар та рейтинги.</p>
-      </article>
-    </div>
-  </div>
-</section>
+    <section class="work-section section-shell" id="work"><div class="section-top reveal"><span class="section-index">02 / SELECTED WORK</span><span class="section-note">ВЛАСНІ ПРОЄКТИ K24</span></div><div class="work-heading reveal"><h2>Створюємо.<br><em>Експериментуємо.</em></h2><p>Добірка цифрових продуктів і концептів, над якими працює K24. Статуси проєктів позначені відкрито.</p></div>
+      <div class="project-list">
+        <article class="project project-kvs reveal"><div class="project-visual visual-kvs"><div class="visual-glow"></div><div class="mock-phone"><div class="mock-top">KVS <span>● ONLINE</span></div><div class="mock-emblem">K</div><div class="mock-lines"><i></i><i></i><i></i></div><div class="mock-stats"><b>LVL 24</b><b>+ XP</b></div></div><span class="visual-caption">GAME ECONOMY / TELEGRAM</span></div><div class="project-info"><div class="project-meta"><span>01 — TELEGRAM GAME SYSTEM</span><span class="project-status"><i></i> ВЛАСНИЙ ПРОЄКТ</span></div><h3>KVS</h3><p>Ігрова екосистема в Telegram: економіка, розвиток персонажа, кар'єра, клани та міські механіки.</p><a href="https://t.me/K24VL" target="_blank" rel="noopener noreferrer" class="text-link">Дізнатися більше <span>↗</span></a></div></article>
+        <article class="project project-dynora reveal"><div class="project-visual visual-dynora"><div class="dynora-symbol">D<span>Y</span></div><div class="dynora-orbit"></div><span class="visual-caption">DIGITAL WORLD / PROGRESSION</span></div><div class="project-info"><div class="project-meta"><span>02 — GAME PROJECT</span><span class="project-status"><i></i> У РОЗРОБЦІ</span></div><h3>Dynora</h3><p>Ігровий цифровий світ із внутрішньою економікою, кланами та системами прогресу.</p><a href="https://t.me/K24VL" target="_blank" rel="noopener noreferrer" class="text-link">Дізнатися більше <span>↗</span></a></div></article>
+        <article class="project project-uno reveal"><div class="project-visual visual-uno"><div class="uno-cards"><span class="uno-card card-red">+2</span><span class="uno-card card-yellow">UNO</span><span class="uno-card card-blue">↻</span></div><span class="visual-caption">CARD GAME / UKRAINIAN EDITION</span></div><div class="project-info"><div class="project-meta"><span>03 — TELEGRAM CARD GAME</span><span class="project-status"><i></i> ВЛАСНИЙ ПРОЄКТ</span></div><h3>UNO Україна</h3><p>Карткова гра для Telegram з українським візуальним стилем та знайомими ігровими правилами.</p><a href="https://t.me/K24VL" target="_blank" rel="noopener noreferrer" class="text-link">Дізнатися більше <span>↗</span></a></div></article>
+        <article class="project project-monopoly reveal"><div class="project-visual visual-monopoly"><div class="monopoly-board"><div class="board-center">M<br><small>CITY</small></div><i></i><i></i><i></i><i></i></div><span class="visual-caption">MOBILE GAME / CITY BUILDER</span></div><div class="project-info"><div class="project-meta"><span>04 — MOBILE GAME</span><span class="project-status"><i></i> У РОЗРОБЦІ</span></div><h3>MONOPOLY CITY</h3><p>Мобільна настільна гра з картою міста, нерухомістю, розвитком ігрового профілю та онлайн-планами.</p><a href="https://t.me/K24VL" target="_blank" rel="noopener noreferrer" class="text-link">Дізнатися більше <span>↗</span></a></div></article>
+      </div>
+    </section>
 
-<section class="section alt" id="portfolio">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <h2>Портфоліо</h2>
-      <p>Проєкти студії. Статуси вказані чесно: що в розробці, так і написано.</p>
-    </div>
-    <div class="grid grid-2">
-      <article class="work reveal">
-        <span class="tag">Telegram-бот</span>
-        <h3>KVS</h3>
-        <p>Telegram-ігрова система з кланами, кар'єрою та містом.</p>
-      </article>
-      <article class="work reveal">
-        <span class="tag">Ігровий проєкт</span>
-        <h3>Dynora</h3>
-        <p>Ігровий цифровий проєкт з економікою, кланами та внутрішніми механіками.</p>
-      </article>
-      <article class="work reveal">
-        <span class="tag">Telegram-гра</span>
-        <h3>UNO Україна</h3>
-        <p>Telegram-карткова гра в українському оформленні.</p>
-      </article>
-      <article class="work reveal">
-        <span class="tag">Мобільна гра · у розробці</span>
-        <h3>MONOPOLY CITY</h3>
-        <p>Мобільний ігровий проєкт. Перебуває в розробці.</p>
-      </article>
-    </div>
-  </div>
-</section>
+    <section class="studio-section section-shell" id="studio"><div class="section-top reveal"><span class="section-index">03 / THE STUDIO</span><span class="section-note">НАШ ПІДХІД</span></div><div class="studio-layout"><div class="studio-copy reveal"><h2>Менше шуму.<br><em>Більше сенсу.</em></h2><p>K24 — незалежна digital-студія, що виросла з розробки Telegram-ботів та ігрових систем. Сьогодні ми працюємо на перетині вебтехнологій, автоматизації та цифрових продуктів.</p><p>Кожне рішення починається з задачі. Ми продумуємо логіку, будуємо зрозумілий інтерфейс і приділяємо увагу деталям, які роблять продукт цілісним.</p><a class="text-link" href="https://t.me/K24VL" target="_blank" rel="noopener noreferrer">Поговорімо про вашу ідею <span>↗</span></a></div><div class="principle-stack reveal"><div class="principle"><span>01</span><div><h3>Індивідуальність</h3><p>Архітектура та дизайн під конкретну мету, а не навпаки.</p></div></div><div class="principle"><span>02</span><div><h3>Функціональність</h3><p>Зрозуміла логіка, стабільна робота та зручний досвід.</p></div></div><div class="principle"><span>03</span><div><h3>Розвиток</h3><p>Рішення, які можна підтримувати, масштабувати й покращувати.</p></div></div></div></div></section>
 
-<section class="section" id="about">
-  <div class="wrap about">
-    <div class="reveal">
-      <h2>Про студію</h2>
-      <p>K24 — незалежна digital-студія. Починалась із Telegram-ботів та ігрових систем, і сьогодні об'єднує розробку ботів, вебсайтів, WebApp, AI-рішень та інтеграцій.</p>
-      <p>Ми не працюємо за шаблоном: кожен продукт будуємо навколо вашої ідеї, а не навпаки.</p>
-    </div>
-    <ul class="principles reveal">
-      <li><strong>Індивідуальний підхід</strong>Рішення під ваше завдання, без типових заготовок.</li>
-      <li><strong>Функціональність</strong>Спершу працює, потім красиво. Краса не заважає роботі.</li>
-      <li><strong>Якість</strong>Тестуємо перед запуском і підтримуємо чистий код для подальших змін.</li>
-    </ul>
-  </div>
-</section>
+    <section class="process-section section-shell" id="process"><div class="section-top reveal"><span class="section-index">04 / HOW WE WORK</span><span class="section-note">ПРОЗОРИЙ ПРОЦЕС</span></div><div class="process-heading reveal"><h2>Від першого<br><em>повідомлення.</em></h2><p>П'ять зрозумілих етапів, щоб рухатися впевнено — від задуму до готового продукту.</p></div><div class="process-grid"><div class="process-step reveal"><span>01</span><h3>Знайомство</h3><p>Обговорюємо ідею, цілі та очікування.</p></div><div class="process-step reveal"><span>02</span><h3>План</h3><p>Формуємо структуру, функції та обсяг робіт.</p></div><div class="process-step reveal"><span>03</span><h3>Розробка</h3><p>Створюємо продукт і показуємо проміжний результат.</p></div><div class="process-step reveal"><span>04</span><h3>Перевірка</h3><p>Тестуємо сценарії, адаптивність і ключові функції.</p></div><div class="process-step reveal"><span>05</span><h3>Запуск</h3><p>Публікуємо проєкт і передаємо результат.</p></div></div></section>
 
-<section class="section alt" id="process">
-  <div class="wrap">
-    <div class="section-head reveal"><h2>Етапи роботи</h2></div>
-    <ol class="steps">
-      <li class="reveal"><span>1</span><h3>Обговорення ідеї</h3><p>З'ясовуємо мету та вимоги.</p></li>
-      <li class="reveal"><span>2</span><h3>Планування</h3><p>Структура, функції, терміни.</p></li>
-      <li class="reveal"><span>3</span><h3>Розробка</h3><p>Створюємо продукт крок за кроком.</p></li>
-      <li class="reveal"><span>4</span><h3>Тестування</h3><p>Перевіряємо роботу на реальних сценаріях.</p></li>
-      <li class="reveal"><span>5</span><h3>Запуск</h3><p>Публікуємо та передаємо вам.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="section contact" id="contacts">
-  <div class="wrap reveal">
-    <h2>Є ідея? Напишіть нам</h2>
-    <p>Найшвидше відповідаємо в Telegram. Опишіть задачу, і ми запропонуємо рішення.</p>
-    <a class="btn btn-gold" href="https://t.me/K24VL" target="_blank" rel="noopener">Написати в Telegram</a>
-    <div class="links">
-      <a href="https://t.me/K24VL" target="_blank" rel="noopener">Telegram</a>
-      <a href="https://youtube.com/@vlados_k24" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://twitch.tv/vlad_k24" target="_blank" rel="noopener">Twitch</a>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer class="footer">
-  <p>© <span id="year">2026</span> K24 Digital Studio. Ідеї, що працюють.</p>
-  <a href="#top">Нагору</a>
-</footer>
-<script src="script.js"></script>
+    <section class="contact-section section-shell" id="contact"><div class="contact-frame reveal"><div class="contact-orbit"></div><span class="section-index">05 / START A PROJECT</span><h2>Є ідея?<br><em>Створімо її.</em></h2><p>Розкажіть, що хочете побудувати. Обговоримо задачу та знайдемо правильний шлях до результату.</p><a class="button button-gold" href="https://t.me/K24VL" target="_blank" rel="noopener noreferrer">Написати в Telegram <span>↗</span></a><div class="contact-bottom"><span>ВІДКРИТІ ДО НОВИХ ІДЕЙ</span><span>K24 DIGITAL STUDIO</span></div></div></section>
+  </main>
+  <footer class="footer"><a class="footer-brand" href="#home">K<span>24</span></a><p>© <span id="year">2026</span> K24 Digital Studio. Ідеї, що працюють.</p><div class="footer-links"><a href="https://t.me/K24VL" target="_blank" rel="noopener noreferrer">Telegram ↗</a><a href="https://youtube.com/@vlados_k24" target="_blank" rel="noopener noreferrer">YouTube ↗</a><a href="https://twitch.tv/vlad_k24" target="_blank" rel="noopener noreferrer">Twitch ↗</a></div><a class="to-top" href="#top" aria-label="Нагору">↑</a></footer>
 </body>
 </html>
